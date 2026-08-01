@@ -1,6 +1,8 @@
+import type { Metadata } from 'next';
+
 export const metadata = {
-  title: "Home - Open PRO",
-  description: "Page description",
+  title: "Home - System's SagaZ",
+  description: "Landing Page for System's SagaZ",
 };
 
 import PageIllustration from "@/components/page-illustration";

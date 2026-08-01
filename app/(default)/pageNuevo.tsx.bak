@@ -1,0 +1,44 @@
+import type { Metadata } from 'next';
+
+export const metadata = {
+  title: "Home - System's SagaZ",
+  description: "Landing Page for System's SagaZ",
+};
+
+import PageIllustration from "@/components/page-illustration";
+import Hero from "@/components/hero-home";
+import Workflows from "@/components/workflows";
+import Features from "@/components/features";
+import Testimonials from "@/components/testimonials";
+import Cta from "@/components/cta";
+
+export default async function Home() {
+  // 1. Fetch data directly from your Google Apps Script
+  const res = await fetch('YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL', { 
+    // This tells Next.js to re-fetch the data every time a user visits
+    // Alternatively, use { next: { revalidate: 3600 } } to cache for 1 hour
+    cache: 'no-store' 
+  });
+  const cmsData = await res.json();
+
+  // 2. Extract the specific rows based on your Sheet's "section" column
+  const heroData = cmsData.find((row: any) => row.section === 'hero');
+  const featuresData = cmsData.find((row: any) => row.section === 'features');
+
+  return (
+    <>
+      <PageIllustration />
+      {/* 3. Pass the data directly into the Cruip components as props */}
+      <Hero 
+        title={heroData?.headline} 
+        subtitle={heroData?.subdeck} 
+      />
+      <Workflows />
+      <Features 
+        title={featuresData?.headline}
+      />
+      <Testimonials />
+      <Cta />
+    </>
+  )
+}
