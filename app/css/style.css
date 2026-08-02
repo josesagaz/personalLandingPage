@@ -46,6 +46,7 @@
 
   --animate-shine: shine 5s ease-in-out 500ms infinite;
   --animate-gradient: gradient 6s linear infinite;
+  
 
   @keyframes shine {
     0% {

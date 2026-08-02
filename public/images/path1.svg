@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="574"
+   height="482"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="blurred-shape.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="574"
+       height="482"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <g
+     filter="url(#a)"
+     id="g1"
+     transform="translate(-93,-93)">
+    <path
+       fill="url(#b)"
+       d="M 93,93 667,479.9 340.816,575 Z"
+       id="path1"
+       style="fill:url(#b)" />
+  </g>
+  <defs
+     id="defs3">
+    <linearGradient
+       id="b"
+       x1="-19.292999"
+       x2="146.25"
+       y1="251.657"
+       y2="599.961"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#6366F1"
+         stop-opacity=".8"
+         id="stop1"
+         offset="0"
+         style="stop-color:#ef3c5e;stop-opacity:0.80000001;" />
+      <stop
+         offset="0.382"
+         stop-color="#6366F1"
+         stop-opacity=".32"
+         id="stop2"
+         style="stop-color:#ce3052;stop-opacity:0.28402367;" />
+      <stop
+         offset="1"
+         stop-color="#6366F1"
+         stop-opacity="0"
+         id="stop3"
+         style="stop-color:#f17263;stop-opacity:0;" />
+    </linearGradient>
+    <filter
+       id="a"
+       width="758.84302"
+       height="666.84302"
+       x="0.57800001"
+       y="0.57800001"
+       color-interpolation-filters="sRGB"
+       filterUnits="userSpaceOnUse">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood3" />
+      <feBlend
+         in="SourceGraphic"
+         in2="BackgroundImageFix"
+         result="shape"
+         id="feBlend3"
+         mode="normal" />
+      <feGaussianBlur
+         result="effect1_foregroundBlur_2109_4735"
+         stdDeviation="46.211"
+         id="feGaussianBlur3" />
+    </filter>
+  </defs>
+</svg>
