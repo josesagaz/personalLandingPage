@@ -29,7 +29,9 @@ export default async function Home() {
       {/* 3. Pass only the two columns you are using right now */}
       <Hero 
         headline={heroRow?.headline || "Fallback Headline"} 
-        subdeck={heroRow?.subdeck || "Fallback Subdeck"} 
+        subdeck={heroRow?.subdeck || "Fallback Subdeck"}
+        ctaText={heroRow?.ctaText || "Fallback CTA Text"}
+        ctaUrl ={heroRow?.ctaUrl || "#0"}
       />
       
       <Workflows />
