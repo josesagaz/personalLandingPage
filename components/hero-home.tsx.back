@@ -1,41 +1,36 @@
-import Image from "next/image";
+import Image from 'next/image';
 import VideoThumb from "@/public/images/hero.png";
+//import ModalVideo from "@/components/modal-video";
 
-// Assuming you have this import for the VideoThumb further up in your file:
-// import VideoThumb from "@/public/images/video-thumb.png";
-
-// 1. We only define the two columns you are currently using
-interface HeroHomeProps {
-  headline: string;
-  subdeck: string;
-}
-
-export default function HeroHome({ headline, subdeck }: HeroHomeProps) {
+export default function HeroHome() {
   return (
     <section>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        {/* Hero content */}
         <div className="py-12 md:py-20">
+          {/* Section header */}
           <div className="pb-12 text-center md:pb-20">
-            
-            {/* The h1 now uses your Sheet's 'headline' column */}
             <h1
               className="animate-[gradient_6s_linear_infinite] 
               bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-red-200),var(--color-gray-50),var(--color-red-300),var(--color-gray-200))] 
-              bg-[length:200%_auto] bg-clip-text pb-5 font-nacelle text-4xl font-semibold text-transparent md:text-5xl"
+              bg-[length:200%_auto] bg-clip-text pb-5 font-nacelle text-2xl font-semibold text-transparent md:text-4xl"
               data-aos="fade-up"
             >
-              {headline}
-            </h1>            
+              Technology Built on Freedom
+            </h1>
+            <h4
+            className="animate-[gradient_6s_linear_infinite] 
+            bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-red-200),var(--color-gray-50),var(--color-red-300),var(--color-gray-200))] 
+            bg-[length:200%_auto] bg-clip-text pb-5 font-nacelle text-4xl font-semibold text-transparent md:text-5xl"
+              data-aos="fade-up">
+                Engineered for Growth</h4>
             <div className="mx-auto max-w-3xl">
-              {/* Description is temporarily hardcoded again */}
               <p
                 className="mb-8 text-xl text-red-200/65"
                 data-aos="fade-up"
                 data-aos-delay={200}
-              >
-                {subdeck}
+              >Enterprise-grade efficiency and custom automation for small businesses, without subscription traps, hidden costs, or vendor lock-in.
               </p>
-              
               <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
                 <div data-aos="fade-up" data-aos-delay={400}>
                   <a

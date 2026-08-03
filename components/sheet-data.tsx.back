@@ -1,0 +1,29 @@
+"use client";
+
+import { useEffect, useState } from 'react';
+
+export default function LandingPage() {
+  const [cmsData, setCmsData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch('https://script.google.com/macros/s/AKfycbxTN47aK_7rGaO0CXJrw5mnWRgTBnPhDDUP-q9ZmPjnJ6mKCzWT4sx_84v0-lyPoBpT/exec')
+      .then(res => res.json())
+      .then(data => {
+        setCmsData(data);
+        setLoading(false);
+      })
+      .catch(err => console.error('Error fetching CMS data:', err));
+  }, []);
+
+  if (loading) return <div>Loading...</div>;
+
+  const hero = cmsData.find(item => item.section === 'hero') || cmsData[0];
+
+  return (
+    
+      {hero?.headline}
+      {hero?.subdeck}
+
+  );
+}
