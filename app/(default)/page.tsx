@@ -14,7 +14,7 @@ import Cta from "@/components/cta";
 
 export default async function Home() {
   // 1. Fetch your data
-  const response = await fetch('https://script.google.com/macros/s/AKfycbxTN47aK_7rGaO0CXJrw5mnWRgTBnPhDDUP-q9ZmPjnJ6mKCzWT4sx_84v0-lyPoBpT/exec', {
+  const response = await fetch('https://script.google.com/macros/s/AKfycbzPtNJF8giaxEr-3RKF3UrR_RZ_ruoJj6J385kbfNaAxynszO2rxJ5jrdECTN3xcogS/exec', {
     next: { revalidate: 60 } 
   });
   const sheetData = await response.json();
