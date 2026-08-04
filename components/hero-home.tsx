@@ -4,15 +4,16 @@ import VideoThumb from "@/public/images/hero.png";
 // Assuming you have this import for the VideoThumb further up in your file:
 // import VideoThumb from "@/public/images/video-thumb.png";
 
-// 1. We only define the two columns you are currently using
+// 1. We only define the columns you are currently using
 interface HeroHomeProps {
   headline: string;
   subdeck: string;
   ctaText: string;
   ctaUrl: string;
+  heroImage: string; 
 }
 
-export default function HeroHome({ headline, subdeck, ctaText, ctaUrl }: HeroHomeProps) {
+export default function HeroHome({ headline, subdeck, ctaText, ctaUrl, heroImage }: HeroHomeProps) {
   return (
     <section>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -67,7 +68,7 @@ export default function HeroHome({ headline, subdeck, ctaText, ctaUrl }: HeroHom
 
           <div>
             <Image
-              src={VideoThumb}
+              src={heroImage || VideoThumb}
               width={1104}
               height={576}
               alt="Description of your image"
