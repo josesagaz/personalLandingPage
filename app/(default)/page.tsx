@@ -50,7 +50,7 @@ export default async function Home() {
       />      
       <Workflows />
       <Features />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Cta />
     </>
   );

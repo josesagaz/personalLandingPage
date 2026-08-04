@@ -37,30 +37,6 @@ export default function Footer() {
                   className="text-red-200/65 transition hover:text-red-500"
                   href="#0"
                 >
-                  Integrations
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-red-200/65 transition hover:text-red-500"
-                  href="#0"
-                >
-                  Pricing &amp; Plans
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-red-200/65 transition hover:text-red-500"
-                  href="#0"
-                >
-                  Changelog
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-red-200/65 transition hover:text-red-500"
-                  href="#0"
-                >
                   Our method
                 </a>
               </li>
@@ -102,22 +78,7 @@ export default function Footer() {
                   Blog
                 </a>
               </li>
-              <li>
-                <a
-                  className="text-red-200/65 transition hover:text-red-500"
-                  href="#0"
-                >
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-red-200/65 transition hover:text-red-500"
-                  href="#0"
-                >
-                  Financial statements
-                </a>
-              </li>
+              
             </ul>
           </div>
           {/* 3rd block */}
@@ -156,22 +117,7 @@ export default function Footer() {
               Content Library
             </h3>
             <ul className="space-y-2 text-sm">
-              <li>
-                <a
-                  className="text-red-200/65 transition hover:text-red-500"
-                  href="#0"
-                >
-                  Templates
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-red-200/65 transition hover:text-red-500"
-                  href="#0"
-                >
-                  Tutorials
-                </a>
-              </li>
+              
               <li>
                 <a
                   className="text-red-200/65 transition hover:text-red-500"
@@ -199,20 +145,14 @@ export default function Footer() {
             </ul>
           </div>
           {/* 5th block */}
-          <div className="col-span-2 md:col-span-4 lg:col-span-1 lg:text-right">
+          <div className="col-span-2 md:col-span-4 lg:col-span-1 lg:text-center">
             <div className="mb-3">
               <Logo />
             </div>
             <div className="text-sm">
               <p className="mb-3 text-red-200/65">
-                © Cruip.com
+                © System's sagaZ
                 <span className="text-gray-700"> · </span>
-                <a
-                  className="text-red-200/65 transition hover:text-red-500"
-                  href="#0"
-                >
-                  Terms
-                </a>
               </p>
               <ul className="inline-flex gap-1">
                 <li>
@@ -258,6 +198,17 @@ export default function Footer() {
                     >
                       <path d="M16 8.2c-4.4 0-8 3.6-8 8 0 3.5 2.3 6.5 5.5 7.6.4.1.5-.2.5-.4V22c-2.2.5-2.7-1-2.7-1-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.3 1.9.9 2.3.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-4 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8.6-.2 1.3-.3 2-.3s1.4.1 2 .3c1.5-1 2.2-.8 2.2-.8.4 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.1 0 3.1-1.9 3.7-3.7 3.9.3.4.6.9.6 1.6v2.2c0 .2.1.5.6.4 3.2-1.1 5.5-4.1 5.5-7.6-.1-4.4-3.7-8-8.1-8z" />
                     </svg>
+                  </a>                  
+                </li>
+                </ul>
+                <ul>
+                <li>
+                  <a  className="flex items-center justify-center text-red-500 transition hover:text-red-400"
+                  href="https://app.netlify.com/projects/systems-sagaz/deploys" target="_blank" rel="noopener noreferrer">
+                  <img 
+                    src="https://api.netlify.com/api/v1/badges/e472d4aa-c20f-481e-b8a0-f525da9584e9/deploy-status" 
+                    alt="Netlify Status" 
+                  />
                   </a>
                 </li>
               </ul>
