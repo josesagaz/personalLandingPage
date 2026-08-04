@@ -1,4 +1,6 @@
 # Free React / Next.js landing page template
+# System's SagaZ
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e472d4aa-c20f-481e-b8a0-f525da9584e9/deploy-status)](https://app.netlify.com/projects/systems-sagaz/deploys)
 
 ![Open React / Next.js template preview](https://github.com/user-attachments/assets/522a5e46-2a0e-48ca-80eb-87c7fa58f3ea)
 
