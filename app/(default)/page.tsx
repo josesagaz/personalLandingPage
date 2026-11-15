@@ -1,57 +1,42 @@
-import type { Metadata } from 'next';
-
-export const metadata = {
-  title: "Home - System's SagaZ",
-  description: "Landing Page for System's SagaZ",
-};
-
 import PageIllustration from "@/components/page-illustration";
 import Hero from "@/components/hero-home";
 import Workflows from "@/components/workflows";
-import Features from "@/components/features";
-import Testimonials from "@/components/testimonials";
-import Cta from "@/components/cta";
 
-export default async function Home() {
-  // 1. Initialize heroRow as null
-  let heroRow = null;
+export const metadata = {
+  title: { absolute: "System's SagaZ | Open-source automation for UK small businesses" },
+  alternates: { canonical: "/" },
+};
 
-  // 2. Wrap the risky network request in a try block
-  try {
-    const response = await fetch('https://script.google.com/macros/s/AKfycbzPtNJF8giaxEr-3RKF3UrR_RZ_ruoJj6J385kbfNaAxynszO2rxJ5jrdECTN3xcogS/exec', {
-      next: { revalidate: 60 } 
-    });
-    
-    // Check if the response is valid before trying to parse JSON
-    if (!response.ok) {
-      throw new Error(`Google Script returned status: ${response.status}`);
-    }
-    
-    const sheetData = await response.json();
-    heroRow = sheetData.find((row: any) => row.section?.toLowerCase() === 'hero');
-    
-  } catch (error) {
-    // 3. If anything fails (HTML returned instead of JSON, network timeout, etc.),
-    // Next.js logs the error to the server console but DOES NOT crash the build.
-    console.error("Failed to fetch Google Sheet data:", error);
-  }
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "System's SagaZ",
+  url: "https://systems-sagaz.co.uk/",
+  logo: "https://systems-sagaz.co.uk/images/logo-dragon-40x40.png",
+  image: "https://systems-sagaz.co.uk/images/hero.png",
+  description:
+    "Workflow automation for UK small businesses built on free and open-source software, so you own your data and your workflows.",
+  areaServed: { "@type": "Country", name: "United Kingdom" },
+  address: { "@type": "PostalAddress", addressLocality: "London", addressCountry: "GB" },
+  availableLanguage: ["en", "es"],
+  sameAs: ["https://github.com/josesagaz"],
+};
 
+export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <PageIllustration />
-      
-      {/* 4. If heroRow is null, it gracefully falls back to your original text */}
-      <Hero 
-        headline={heroRow?.headline || "Technology Built on Freedom"} 
-        subdeck={heroRow?.subdeck || "Engineered for Growth"}
-        ctaText={heroRow?.ctaText || "Fallback CTA Text"}
-        ctaUrl ={heroRow?.ctaUrl || "#0"}
-        heroImage={heroRow?.heroImage || ""}
-      />      
+      <Hero
+        headline="Open Technology Powers the Modern World"
+        subdeck="We build enterprise-grade automation for small businesses, technology built on freedom, engineered for growth"
+        ctaText="See how it works"
+        ctaUrl="#workflows"
+      />
       <Workflows />
-      <Features />
-      {/* <Testimonials /> */}
-      <Cta />
     </>
   );
 }
