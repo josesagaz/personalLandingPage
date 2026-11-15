@@ -8,7 +8,7 @@ export type Lang = "en" | "es";
  * the header switcher, hreflang tags and sitemap all read from this list.
  */
 export const PAGES: { en: string; es?: string; sitemap?: boolean }[] = [
-  { en: "/" },
+  { en: "/", es: "/es" },
   { en: "/about", es: "/es/sobre-mi" },
   { en: "/contact", es: "/es/contacto" },
   { en: "/privacy", es: "/es/privacidad" },
