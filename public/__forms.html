@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="robots" content="noindex" /><title>Forms</title></head>
+  <body>
+    <!-- Netlify Forms detects this at deploy time. Keep field names in sync with components/contact-form.tsx -->
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="bot-field" />
+      <input name="name" type="text" />
+      <input name="email" type="email" />
+      <input name="organisation" type="text" />
+      <textarea name="message"></textarea>
+      <select name="language"><option>English</option><option>Español</option></select>
+    </form>
+  </body>
+</html>

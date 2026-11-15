@@ -19,6 +19,7 @@ const jsonLd = {
   areaServed: { "@type": "Country", name: "United Kingdom" },
   address: { "@type": "PostalAddress", addressLocality: "London", addressCountry: "GB" },
   availableLanguage: ["en", "es"],
+  founder: { "@type": "Person", name: "Jose Sagarnaga", url: "https://systems-sagaz.co.uk/about" },
   sameAs: ["https://github.com/josesagaz"],
 };
 
@@ -33,8 +34,8 @@ export default function Home() {
       <Hero
         headline="Open Technology Powers the Modern World"
         subdeck="We build enterprise-grade automation for small businesses, technology built on freedom, engineered for growth"
-        ctaText="See how it works"
-        ctaUrl="#workflows"
+        ctaText="Tell me about your setup"
+        ctaUrl="/contact"
       />
       <Workflows />
     </>

@@ -1,8 +1,11 @@
+import Link from "next/link";
 import Logo from "./logo";
+import { FOOTER, OWNER, homeFor, type Lang } from "@/lib/site";
 import Image from "next/image";
 import FooterIllustration from "@/public/images/footer-illustration.svg";
 
-export default function Footer() {
+export default function Footer({ lang = "en" }: { lang?: Lang }) {
+  const f = FOOTER[lang];
   return (
     <footer>
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
@@ -19,9 +22,18 @@ export default function Footer() {
           />
         </div>
         <div className="flex flex-col items-center gap-3 py-8 text-center text-sm md:py-12">
-          <Logo />
+          <Logo href={homeFor(lang)} />
+          <ul className="flex gap-4 text-gray-300">
+            {f.links.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="hover:text-white">
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
           <p className="text-red-200/65">
-            © {new Date().getFullYear()} System&apos;s SagaZ · London, UK
+            © {new Date().getFullYear()} System&apos;s SagaZ · {OWNER} · {f.place}
           </p>
           <a
             className="flex items-center justify-center text-red-500 transition hover:text-red-400"
