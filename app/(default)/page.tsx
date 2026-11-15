@@ -38,10 +38,12 @@ const c: HomeContent = {
       },
       {
         title: "Workflow automation",
+        href: "/services/workflow-automation",
         text: "Let the computer do the repetitive admin: copying data between tools, sending reminders, building the same report every month.",
       },
       {
         title: "Move to free software",
+        href: "/services/free-software",
         text: "Swap expensive licences for free software like LibreOffice and Nextcloud, step by step, with your files kept safe in open formats.",
       },
     ],

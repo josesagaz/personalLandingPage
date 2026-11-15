@@ -39,10 +39,12 @@ const c: HomeContent = {
       },
       {
         title: "Automatización de procesos",
+        href: "/es/servicios/automatizacion-de-procesos",
         text: "Deja que el ordenador haga las tareas repetitivas: copiar datos entre herramientas, enviar recordatorios, preparar el mismo informe cada mes.",
       },
       {
         title: "Pasarte a software libre",
+        href: "/es/servicios/software-libre",
         text: "Cambia licencias caras por software libre como LibreOffice y Nextcloud, paso a paso y con tus archivos a salvo en formatos abiertos.",
       },
     ],
