@@ -33,6 +33,7 @@ const c: HomeContent = {
     items: [
       {
         title: "Spreadsheets → app",
+        href: "/services/spreadsheets-to-app",
         text: "Turn a tangle of spreadsheets into one clean set of data and a simple app your team can use on phone and computer. Enter information once, find it instantly.",
       },
       {
@@ -54,6 +55,8 @@ const c: HomeContent = {
       { value: "4 months", label: "part-time build" },
       { value: "£0", label: "in licences" },
     ],
+    href: "/work/community-advice-data-app",
+    linkText: "Read the case study →",
   },
   steps: {
     eyebrow: "How I work",

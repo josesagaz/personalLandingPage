@@ -14,7 +14,7 @@ export default function LangSwitch() {
       lang={lang === "en" ? "es" : "en"}
       className="text-sm text-gray-300 underline-offset-4 hover:text-white hover:underline"
     >
-      {lang === "en" ? "Español" : "English"}
+      {lang === "en" ? "Castellano" : "English"}
     </Link>
   );
 }

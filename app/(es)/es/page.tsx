@@ -34,6 +34,7 @@ const c: HomeContent = {
     items: [
       {
         title: "De hojas de cálculo a app",
+        href: "/es/servicios/de-hojas-de-calculo-a-app",
         text: "Convierte un lío de hojas de cálculo en un único conjunto de datos limpio y una app sencilla que tu equipo usa en el móvil y en el ordenador. Introduce cada dato una vez y encuéntralo al instante.",
       },
       {
@@ -55,6 +56,8 @@ const c: HomeContent = {
       { value: "4 meses", label: "a tiempo parcial" },
       { value: "£0", label: "en licencias" },
     ],
+    href: "/es/casos/app-datos-servicio-comunitario",
+    linkText: "Leer el caso →",
   },
   steps: {
     eyebrow: "Cómo trabajo",
