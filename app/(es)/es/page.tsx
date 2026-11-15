@@ -76,6 +76,8 @@ const c: HomeContent = {
       "El software libre es software que tienes permiso para usar, estudiar, modificar y compartir. En la práctica significa no pagar alquiler por licencias, no sufrir actualizaciones obligatorias y tener tus datos en formatos que cualquier herramienta puede abrir.",
       "No es una idea marginal: el Gobierno británico adoptó el formato abierto de documentos como estándar en 2014, y administraciones públicas de toda Europa, desde Dinamarca hasta Schleswig-Holstein en Alemania, se están pasando al software libre por los mismos motivos.",
     ],
+    href: "/es/por-que-software-libre",
+    linkText: "¿Por qué software libre? Lee la guía →",
   },
   about: {
     eyebrow: "Con quién vas a trabajar",

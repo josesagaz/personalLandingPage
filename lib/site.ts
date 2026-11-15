@@ -14,6 +14,7 @@ export const PAGES: { en: string; es?: string; sitemap?: boolean }[] = [
   { en: "/privacy", es: "/es/privacidad" },
   { en: "/services/spreadsheets-to-app", es: "/es/servicios/de-hojas-de-calculo-a-app" },
   { en: "/work/community-advice-data-app", es: "/es/casos/app-datos-servicio-comunitario" },
+  { en: "/why-free-software", es: "/es/por-que-software-libre" },
 ];
 
 export function twinOf(path: string): { lang: Lang; twin?: string } {

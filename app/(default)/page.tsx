@@ -75,6 +75,8 @@ const c: HomeContent = {
       "Free software (\"libre\", not just free of charge) is software you're allowed to use, study, change and share. In practice that means no licence rent, no forced upgrades, and your data in formats any tool can open.",
       "It isn't a fringe idea: the UK government made the open document format its standard in 2014, and public bodies across Europe, from Denmark to Schleswig-Holstein in Germany, are moving to free software for the same reasons.",
     ],
+    href: "/why-free-software",
+    linkText: "Why free software? Read the guide →",
   },
   about: {
     eyebrow: "Who you'll work with",
