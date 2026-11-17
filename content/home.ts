@@ -87,7 +87,7 @@ export const homeEn = {
     kicker: "03 / Recent work",
     tag: "Case study · Community advice service",
     title: "A community advice service, off messy spreadsheets.",
-    link: { label: "Read the case study →", href: "/work/community-advice-service" },
+    link: { label: "Read the case study →", href: "/work/community-advice-data-app" },
     stats: [
       { value: "5", label: "people using it daily" },
       { value: "4 mo", label: "part-time build" },
@@ -98,10 +98,10 @@ export const homeEn = {
     kicker: "04 / How I work",
     title: "Small steps, no surprises.",
     steps: [
-      { title: "Chat", text: "You tell me how you work today and what's getting in the way." },
-      { title: "Look", text: "I look at your spreadsheets, tools and routines." },
-      { title: "Fixed-price plan", text: "A clear plan and one agreed price before any build starts." },
-      { title: "Build & train", text: "I build it in steps and train your team to run it." },
+      { title: "Chat", text: "You tell me what you use today and what's getting in the way." },
+      { title: "Look", text: "I look at your current setup: files, tools and how your team actually works." },
+      { title: "Fixed-price plan", text: "You get a clear plan and a fixed price before any work starts." },
+      { title: "Build & train", text: "I build it step by step, so your team keeps working and learns as we go." },
     ],
   },
   free: {
