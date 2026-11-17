@@ -4,6 +4,13 @@ import type { Metadata } from "next";
 
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
+import type { Metadata } from "next";
+import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
+
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["500", "600", "700"], variable: "--font-space-grotesk", display: "swap" });
+const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-jetbrains-mono", display: "swap" });
+
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -62,13 +69,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en-GB" className="scroll-pt-24">
-      <body
-        className={`${inter.variable} ${nacelle.variable} bg-gray-950 font-inter text-base text-gray-200 antialiased`}
-      >
-        <div className="flex min-h-screen flex-col overflow-clip">
-          {children}
-        </div>
-      </body>
-    </html>
+  <body
+    className={`${inter.variable} ${nacelle.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} bg-gray-950 font-inter text-base text-gray-200 antialiased`}
+  >
+    <div className="flex min-h-screen flex-col overflow-clip">
+      {children}
+    </div>
+  </body>
+</html>
   );
 }
+
