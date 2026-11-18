@@ -30,7 +30,7 @@ export default function HomePage({ t }: { t: HomeContent }) {
 
 function Nav({ t }: { t: HomeContent["nav"] }) {
   return (
-    <header className="relative z-10 border-b border-line">
+    <header className="relative z-50 border-b border-line bg-ink/80 backdrop-blur-md md:sticky md:top-0">
       <nav aria-label="Main" className={`${container} flex flex-wrap items-center justify-between gap-4 py-[18px]`}>
         <Link href="/" className="flex items-center gap-3 font-display text-xl font-bold tracking-[-0.01em]">
           <Image src="/images/logo-dragon.png" alt="" width={40} height={40} priority />
